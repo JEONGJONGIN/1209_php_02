@@ -31,7 +31,7 @@ if ($status==false) {
     $view .= "<p>";
     $view .= h($result['pop']) . " / " . h($result['genre']) . " / " . h($result['artist']) . " " .  
              h('-') . " " . h($result['name']) . " / " . " " . h($result['comment']) . " / " . 
-             h($result['date']) . " / " . "<a href='{$result['url']}'>URL</a>" . " / " . 
+             h($result['date']) . " / " . "<a href='{$result['url']}' target='_blank'>URL</a>" . " / " . 
              "<a href='#' onclick=\"deleteRecord({$result['id']})\">[削除]</a>". " "; //「$view .」の .の意味は while文で上書き上書きせず追記するようにするため入れる。 
     $view .= "</p>";
   }
